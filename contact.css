@@ -1,0 +1,22 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.contact{
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    background-color: whitesmoke;
+}
+.form-group{
+    margin-bottom: 20px;
+}

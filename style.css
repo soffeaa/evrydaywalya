@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+html {
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+}
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+.home {
+  background-color: #003a37;
+  position: 100%;
+  font-size: 25px;
+  height: 100vh;
+  padding: 0 10%;
+  width: 100%;
+
+}
+.container h1 {
+  font-size: 50px;
+  width: 100%;
+  min-height: 100px; 
+  padding: 0 10;
+  color: white;
+  padding-top: 30%;
+}
+.container h4,h5 {
+  padding: 0;
+  align-items: center;
+  color: white;
+}
+nav {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  top:0%
+}
+a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 35px;
+  color: rgb(245, 244, 243);
+  transition: 1s;
+}
+a:hover {
+  color: #059790;
+}
+class {
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+.aboutme {
+  width: 100%;
+  padding: 100px 0px;
+}
+.aboutme img {
+  height: auto;
+  width: 430px;
+}
+.aboutme-text{
+  width: 550px;
+}
+.about {
+  width: 1130px;
+  max-width: 95%;
+  margin: 10% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutme-text h2 {
+  color: #003a37;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.aboutme-text p {
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-top: 45px;
+}
+.button {
+  color: rgb(150, 10, 10);
+  margin: 0px 0px;
+}
+.skills {
+  width: 100%;
+  padding: 100px 0px;
+}
+.title h2 {
+  color: #003a37;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin: 30px 20px;
+  text-align: center;
+}
+.title p {
+  color: white;
+}
+.box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 300px;
+}
+.card {
+  height: 330px;
+  width: 350px;
+  padding: 20px 35px;
+  background: rgba(128, 128, 128, 0.11);
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.pra p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutme.css">
+    <title>about me</title>
+</head>
+<body>
+    <br><h2> Education Level:</h2>
+    <table>
+        <tr>
+            <td><img src= "skdoj.jpg"> </td>
+            <td><b>Sekolah Kebangsaan Dato' Onn Jaafar<br>(SK DOJ)</b><br><br> I have receive my elementary education since 2010 until 2015. 
+            </td>
+        </tr>
+        <tr>
+            <td><b>Sekolah Menegah Kebangsaan USJ 13 <BR>(SMK USJ 13)</b><br><br> I have receive my second education in SMK USJ 13 on 2016 before I moved to Johor Bahru on 2017.</td>
+            <td><img src= "smkusj13.jpeg" ></td>
+        </tr>
+        <tr>
+            <td><img src= "smktd2.jpeg"></td>
+            <td><b>Sekolah Menegah Kebangsaan Taman Daya 2<br>(SMKTD 2)</b><br><br>My first school after I moved to Johor Bahru </td>
+        </tr>
+        <tr>
+            <td><b>Kolej Matrikulasi Johor</b><br> (KMJ)<br><br> Furthering my studies at KMJ in Computer Science for 2 years </td>
+            <td><img src= "kmj.png"></td>
+        </tr>
+        <tr>
+            <td><img src="uitm.png"></td>
+            <td><b>Universiti Teknologi Mara</b><br> (UiTM)<br><br> Now I Currently pursuing my degree at UiTM campus Rembau</td>
+        </tr>
+    </table>
+
+<!--gallery-->
+<div class="header" id="myHeader">
+    <h1>My Gallery</h1>
+    <p>me, my family and friends<br></p>
+    <audio controls>
+      <source src="LE SSERAFIM Smart Lyrics (Color Coded Lyrics).mp3">
+    </audio><br>
+    <button class="btn" onclick="one()">1</button>
+    <button class="btn" onclick="two()">2</button>
+    <button class="btn" onclick="four()">4</button>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="image/pic 1.jpg" style="width:100%">
+      <img src="image/pic 2.jpg" style="width:100%">
+      <img src="image/pic 3.jpg" style="width:100%">
+      <img src="image/pic4.jpg" style="width:100%">
+      <img src="image/pic5.jpg" style="width:100%">
+      <img src="image/pic6.jpg" style="width:100%">
+      <img src="image/pic7.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="image/pic8.jpg" style="width:100%">
+      <img src="image/pic9.jpg" style="width:100%">
+      <img src="image/pic10.jpg" style="width:100%">
+      <img src="image/pic11.jpg" style="width:100%">
+      <img src="image/pic12.jpg" style="width:100%">
+      <img src="image/pic13.jpg" style="width:100%">
+      <img src="image/pic26.jpg" style="width:100%">
+      <img src="image/pic33.jpg" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="image/pic14.jpg" style="width:100%">
+      <img src="image/pic15.jpg" style="width:100%">
+      <img src="image/p16.jpg" style="width:100%">
+      <img src="image/pic17.jpg" style="width:100%">
+      <img src="image/pic18.jpg" style="width:100%">
+      <img src="image/pic19.jpg" style="width:100%">
+      <img src="image/pic20.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="" style="width:100%">
+      <img src="image/pic21.jpg" style="width:100%">
+      <img src="image/pic22.jpg" style="width:100%">
+      <img src="image/pic23.jpg" style="width:100%">
+      <img src="image/pic24.jpg" style="width:100%">
+      <img src="image/pic25.jpg" style="width:100%">
+      <img src="image/pic28.jpg" style="width:100%">
+      <img src="image/pic31.jpg" style="width:100%">
+    </div>
+  </div>
+  
+  <script>
+  // Get the elements with class="column"
+  var elements = document.getElementsByClassName("column");
+  
+  // Declare a loop variable
+  var i;
+  
+  // Full-width images
+  function one() {
+      for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "100%";  // IE10
+      elements[i].style.flex = "100%";
+    }
+  }
+  
+  // Two images side by side
+  function two() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "50%";  // IE10
+      elements[i].style.flex = "50%";
+    }
+  }
+  
+  // Four images side by side
+  function four() {
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.msFlex = "25%";  // IE10
+      elements[i].style.flex = "25%";
+    }
+  }
+  
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myHeader");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+</body>
